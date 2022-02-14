@@ -34,7 +34,7 @@ We have created a step-by-step [video](https://cs.anu.edu.au/courses/comp1110/he
 
    (If you are using the lab computers on ANU campus you can skip this step for now.) 
 
-   Follow the instructions on the course web page for [setting up the software for your home computer](https://cs.anu.edu.au/courses/comp1110/help/05-working-remotely/). 
+   Follow the instructions on the course web page for [setting up the software for your home computer](https://cs.anu.edu.au/courses/comp1110/help/software/). 
 
 1. **Set up your GitLab account.**
 
@@ -303,7 +303,7 @@ We will now set the path variable `PATH_TO_FX` to point to the JavaFX install lo
 6. Now select the `HelloTutor` program from the **Run Configuration** menu and click ![run button - green triangle](../../../assets/intellij-icon-run.png) **Run**.
    If JavaFX is correctly configured, you should see a little window pop up.
 
-If after following the above steps and reading the [instructions for working remotely](https://cs.anu.edu.au/courses/comp1110/help/05-working-remotely/#javafx) the program will still not execute, please seek help from your peers and your tutor.
+If after following the above steps and reading the [instructions for working remotely](https://cs.anu.edu.au/courses/comp1110/help/software/#javafx) the program will still not execute, please seek help from your peers and your tutor.
 
 Once you're able to run the program, please modify the source code of `HelloTutor` to correctly show your tutor's name in the title and in the text label visible in the displayed window.
 
@@ -349,7 +349,7 @@ To finish up, you need to commit and push your work and then close the associate
 ### Set up IntelliJ (Home)
 
 You now need to configure your home computer if you have not done so already.
-Before you start, you must have [set up the software for your home computer](https://cs.anu.edu.au/courses/comp1110/help/05-working-remotely/).
+Before you start, you must have [set up the software for your home computer](https://cs.anu.edu.au/courses/comp1110/help/software/).
 
 Once you have the software installed, you will need to repeat the following steps on your home computer:
 1. [clone your labs repo](#clone-your-repository);
@@ -372,7 +372,7 @@ Note: when you clone your labs repo for the second time, you will see the HelloW
 
 ### HelloTutor (Home)
 
-1. Follow the [instructions for working remotely](https://cs.anu.edu.au/courses/comp1110/help/05-working-remotely/#javafx) to install and configure JavaFX on your home computer.
+1. Follow the [instructions for working remotely](https://cs.anu.edu.au/courses/comp1110/help/software/#javafx) to install and configure JavaFX on your home computer.
 2. In IntelliJ on your home computer, open the comp1110-labs project and navigate to `HelloTutor`.
 3. Check that the class compiles and runs and that the application window appears correctly.
 

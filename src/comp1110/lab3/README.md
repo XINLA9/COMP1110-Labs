@@ -7,11 +7,11 @@ This lab contains material from modules [**O1**](https://cs.anu.edu.au/courses/c
 Remember that *Tasks* are compulsory whilst *Additional Exercises* are extra practice related to this lab and/or the lecture content. Even if you don’t finish the lab, it is recommended that you make use of the additional exercises.
 
 **Tasks**
-1. [Bucket](#bucket)
-2. [Lab Test Preparation](#prepare-for-the-lab-test)
+1. [Bucket](#1-bucket)
+2. [Lab Test Preparation](#2-prepare-for-the-lab-test)
 
 **Additional Exercises**
-1. [Stackable Bucket](#extension-stackable-bucket)
+1. [Stackable Bucket](#1-stackable-bucket)
 
 ## Before the Lab
 
