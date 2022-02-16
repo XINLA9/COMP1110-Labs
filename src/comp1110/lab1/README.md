@@ -12,29 +12,24 @@ In this lab, you will become familiar with the tools we will use throughout the 
 2. Complete your [personal journal](#personal-journal) for Week 1
 3. [Complete the HelloWorld example](#helloworld)
 4. [Complete the HelloTutor JavaFX test](#hellotutor)
-5. [Complete the HelloWorld example on your computer](#modify-helloworld-home)
-6. [Complete the HelloTutor JavaFX test on your computer](#hellotutor-home)
 
 We want you to do this *now*, in Week One, so that you can focus on course content from the first day of Week Two rather than be distracted by concerns over how the tools work.
 This lab is your chance to learn how to use the tools with the course tutors' assistance.
 Please make the most of this opportunity.
 
-**IMPORTANT:** Pre-COVID, we wanted all students to be able to do these exercises in the lab as well as on their home computer, and we wanted to be sure that every student and a fully working home computer by the time they completed week 1.
-However, many students may not have access to the physical lab because they are *working remotely*.   **Therefore, if you are working remotely, please simply do all of these excercises on your home computer.**  If
-you have access to ANU labs, we encourage you to complete the exercises in the lab and on your home machine as described below.
+If you are studying remotely, you will be working from your own device. If are on-campus then we **strongly encourage** you to setup and run this exercises on both the lab computers and on your own device so you are familiar with both. We will have limited capacity to help with basic technical issues surrounding the tools beyond to the first week, so make sure you resolve them now.
 
 We have created a step-by-step [video](https://cs.anu.edu.au/courses/comp1110/help/mp4/lab1.mp4) showing you how to complete this lab in the lab environment.
 
 ## Tasks
 
+### Setup Course Software on Own Computer
+
+If you are using the lab computers on ANU campus you can obviously skip this step for now, but be sure to come back to it for your own device.
+
+Follow the instructions on the course web page for [setting up the software for your home computer](https://cs.anu.edu.au/courses/comp1110/help/software/). 
 
 ### Set up GitLab
-
-0. **Install IntelliJ on your home computer**
-
-   (If you are using the lab computers on ANU campus you can skip this step for now.) 
-
-   Follow the instructions on the course web page for [setting up the software for your home computer](https://cs.anu.edu.au/courses/comp1110/help/software/). 
 
 1. **Set up your GitLab account.**
 
@@ -116,7 +111,7 @@ Now navigate to the [pledge of academic integrity](Integrity.md).
 You need to sign the pledge with your name, University ID, and date.
 
 Click on the **Edit** button at top-right of the document.
-At the bottom of the pledge, replace `<your name>` with your name (it needs to match your Gitlab username), `<your uid>` with your UID, and replace `<today's date>` with today's date in <yyyy-mm-dd> format.
+At the bottom of the pledge, replace `<your name>` with your name (it needs to match your Gitlab username), `<your uid>` with your UID, and replace `<today's date>` with today's date in `<yyyy-mm-dd>` format.
 Change the **Commit message** to read "Completed pledge", then select **Commit changes**.
 
 ### Continuous Integration
@@ -346,7 +341,7 @@ To finish up, you need to commit and push your work and then close the associate
    By default, GitLab only shows *open* issues, so once you've closed them, they'll disappear.
    However, you can list *all* issues or the *closed* ones by selecting the appropriate tab.
 
-### Set up IntelliJ (Home)
+### Testing your Own Computer Environment
 
 You now need to configure your home computer if you have not done so already.
 Before you start, you must have [set up the software for your home computer](https://cs.anu.edu.au/courses/comp1110/help/software/).
@@ -356,38 +351,14 @@ Once you have the software installed, you will need to repeat the following step
 2. [set up the JDK in IntelliJ](#set-up-jdk-in-intellij); and
 3. [set up JavaFX in IntelliJ](#hellotutor).
 
-Note: when you clone your labs repo for the second time, you will see the HelloWorld class you already created in the lab environment.
-
-### Modify HelloWorld (Home)
-
-1. In IntelliJ on your own computer, go to your comp1110-labs project, and
-   navigate to `HelloWorld`.
-2. Check that `HelloWorld` runs correctly (use the **Run** menu), and that it passes all tests, just as it did in the [earlier exercise](#helloworld).
-3. Modify `HelloWorld` so that it prints out `Goodbye World`.
-   Confirm that it no longer passes the tests.
-4. Commit your change.  Use a commit message such as "Broke program".
-5. Fix your program so that it works correctly.
-6. Commit your change.  Use a commit message such as "Fixed program".
-7. *Push* your commits if you have not already done so (select **Git > Push...**).
-
-### HelloTutor (Home)
-
-1. Follow the [instructions for working remotely](https://cs.anu.edu.au/courses/comp1110/help/software/#javafx) to install and configure JavaFX on your home computer.
-2. In IntelliJ on your home computer, open the comp1110-labs project and navigate to `HelloTutor`.
-3. Check that the class compiles and runs and that the application window appears correctly.
-
-If after carefully following the instructions, the class will not run, please seek assistance from your peers, your tutor, or the class forum.
-
-There is no need to make any modifications to this program; just check that `HelloTutor` runs correctly.
-   We will be coming back to JavaFX later in the semester.
+When you clone your labs repo for the second time, you will see the HelloWorld class you already created in the lab environment. Now verify your home computer environment works by checking that `HelloWorld` and `HelloTutor` run as they did in the lab.
 
 ### Have Your Lab Marked
 
 Once you have completed the tasks for the lab, ask your tutor to mark the following items:
 * Your signed pledge
 * Your completed Week 1 journal entry
-* Your work on the system of your choice
-* Your work on your home computer (including the Git log that shows your work)
+* Your working lab tasks on the system of your choice
 
 ### Accessing Homework 
 
