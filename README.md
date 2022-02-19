@@ -7,7 +7,7 @@ It is essential that you use streams to [enroll](https://cs.anu.edu.au/streams/)
 ### The Labs Repository
 
 This repository is the basis for COMP1110/COMP1140/COMP6710 lab exercises.
-In the [week 1 lab](src/comp1110/lab1/), you will [**fork**](http://docs.gitlab.com/ee/gitlab-basics/fork-project.html) your own copy of this repository, which you will use for the remainder of the semester.
+In the [week 1 lab](src/comp1110/lab1/), you will [**fork**](https://docs.gitlab.com/ee/user/project/repository/forking_workflow.html#creating-a-fork) your own copy of this repository, which you will use for the remainder of the semester.
 
 ### Lab Exercises
 
