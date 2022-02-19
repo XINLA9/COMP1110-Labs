@@ -41,7 +41,7 @@ Follow the instructions on the course web page for [setting up the software for 
 
 2.  **Fork the comp1110-labs repository.**
 
-    In Git jargon, to [*fork*](http://docs.gitlab.com/ee/gitlab-basics/fork-project.html) a repository means to create a copy of a repo *owned by someone else*.
+    In Git jargon, to [*fork*](https://docs.gitlab.com/ee/user/project/repository/forking_workflow.html#creating-a-fork) a repository means to create a copy of a repo *owned by someone else*.
     You and every other student will fork the course labs repo to create a copy *owned by you*.
     You can't push changes to the course repo (only the lecturer can do that), but you can push changes to your fork of the repo.
 
