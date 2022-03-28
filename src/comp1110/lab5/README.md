@@ -134,7 +134,7 @@ If there are only two people in the group, you can adapt the exercise by delegat
     * Ensure that you are on the head of the `master` branch (i.e. not on Bob's experimental branch).
       The changeset you are on is marked with a yellow tag; if you hover the mouse over the tag it should show the word "HEAD".
       If you followed the steps correctly, Alice and Cindy should have the changeset where Bob did a merge (right before he made the branch).
-      Bob will be on the wrong changeset, so he should switch to the `master` branch: select **Git > Branches...**, then **Local Branches > master**, then **Update**.
+      Bob will be on the wrong changeset, so he should switch to the `master` branch: select **Git > Branches...**, then **Local Branches > master**, then **Checkout**.
     * Now (ignoring Bob's experiment), everyone should edit the main method of `Main` and add a line such as `A a = new A();`, changed suitably to reflect the author (i.e. `B` for Bob and `C` for Cindy).
     * Each person should now save and commit (*but don't yet push*) their change.  Remember to set your author name and a commit message.
 
