@@ -2,7 +2,7 @@
 
 ### Before You Start
 
-It is essential that you use streams to [enroll](https://cs.anu.edu.au/streams/) in a lab class before the end of Week 1.
+It is essential that you use My Timetable to [enroll](https://www.anu.edu.au/students/program-administration/timetabling/student-access-and-support-for-mytimetable) in a lab class before the end of Week 1.
 
 ### The Labs Repository
 
