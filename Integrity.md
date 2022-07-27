@@ -11,8 +11,8 @@ I am aware of the relevant
 and understand the consequences of me breaching those rules.  I have read the COMP1110 [code of conduct](https://cs.anu.edu.au/courses/comp1110/05-codeofconduct/) and pledge to abide by it.
 
 
-Name: <Xinhe lai>
+Name: Xinhe lai
 
-UID: <u7518549>
+UID: u7518549
 
 Date: <2022-07-27>
