@@ -77,7 +77,11 @@ Update your fork of the repo to include these changes using the following steps:
 11. Select **Git > Push...** to push the newly merged changes to your fork of the comp1110-labs repo on GitLab.
 
 Go to the GitLab web page for your labs repo, and from the ![Repository sidebar button - file](../../../assets/icon-repository-sidebar.png) **Repository** sidebar menu, use the **Commits** and **Graph** menu options  to see how the changes you pulled have been integrated into your own repo.
- 
+
+**Congratulations!** If you are reading this, then you have successfully
+pulled the updated README file from the upstream repository (or you forked
+it after the change was made).
+
 Once you've merged upstream changes into your forked version of the repository on GitLab, you can merge those changes into any other clones of your forked repo (e.g. on your home computer) using a simple Git pull.
 
 Once you have completed this task, close the associated issue (#10) with a
