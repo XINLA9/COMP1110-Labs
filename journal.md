@@ -42,7 +42,7 @@ Third, it helps your lecturer understand how the whole class is doing, making hi
 | Week | Going Well? (1-5) | Group OK? (1-5) | What I have done | What I will do | What impedes me |
 |---|:---:|:---:|---|---|---|
 | 1 |5|-|Just started|Finish lab 1|
-| 2 |5|-|still learning|Finish lab 2|
+| 2 |5|-|Still learning|Finish lab 2|
 | 3 ||-|||
 | 4 |||||
 | 5 |||||
