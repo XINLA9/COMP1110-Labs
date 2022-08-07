@@ -15,7 +15,7 @@ Remember that *Tasks* are compulsory whilst *Additional Exercises* are extra pra
 
 ## Before the Lab
 
-* Complete your personal journal for Week 3, commit and push it at least 5 minutes prior to the lab test.
+* Complete your personal journal for Week 3, commit and push it at least 5 minutes prior to the start of your scheduled lab time.
 * Watch the [lab demo video](https://cs.anu.edu.au/courses/comp1110/labs/mp4/lab3-demo.mp4) for this lab.
   * Lab 3 demo visualiser [here](https://cscircles.cemc.uwaterloo.ca/java_visualize/#code=public+class+BallsBag+%7B%0A/*%0ADesign+goal%3A%0A1.+owner%0A2.+number%0A3.+add+a+ball/balls%0A4.+drop+a+ball/balls%0A5.+showing+the+ball+object%0A+*/%0A%0A++++private+String+owner%3B%0A++++private+int+number%3B%0A%0A++++BallsBag+(String+name)+%7B%0A++++++++this.owner+%3D+name%3B%0A++++%7D%0A%0A++++void+addBall()+%7B%0A++++++++number%2B%2B%3B%0A++++%7D%0A%0A++++void+addBalls(int+amount)+%7B%0A+++++++number+%2B%3D+amount%3B%0A++++%7D%0A%0A++++void+dropBall()+%7B%0A++++++++number--%3B%0A++++%7D%0A%0A++++void+dropBall(int+amount)+%7B%0A++++++++number+-%3D+amount%3B%0A++++%7D%0A%0A++++%40Override%0A++++public+String+toString()+%7B%0A++++++++return+%22BallsBag%7B%22+%2B%0A++++++++++++++++%22owner%3D'%22+%2B+owner+%2B+'%5C''+%2B%0A++++++++++++++++%22,+number%3D%22+%2B+number+%2B%0A++++++++++++++++'%7D'%3B%0A++++%7D%0A%0A++++public+static+void+main(String%5B%5D+args)+%7B%0A++++++++BallsBag+bagForLeo+%3D+new+BallsBag(%22Leopold%22)%3B%0A%0A++++++++System.out.println(bagForLeo)%3B%0A%0A++++++++bagForLeo.addBall()%3B%0A%0A++++++++System.out.println(bagForLeo)%3B%0A%0A++++++++bagForLeo.addBalls(6)%3B%0A%0A++++++++System.out.println(bagForLeo)%3B%0A%0A++++++++bagForLeo.dropBall()%3B%0A++++++++bagForLeo.dropBall(5)%3B%0A%0A++++++++System.out.println(bagForLeo)%3B%0A++++%7D%0A%7D&mode=edit).
 * Next week (Week 4) will be the [lab test](https://cs.anu.edu.au/courses/comp1110/assessments/labtest/).
@@ -56,7 +56,8 @@ that it was litres.
 2.    **Write the constructor for the Bucket object**
 
 The constructor for a Bucket should take the capacity as an argument.   The constructor's
-signature should thus be `Bucket(double capacity)`.
+signature should thus be `Bucket(double capacity)`. You can assume that a Bucket is empty
+when it is initialised.
 
 In your object, both `capacity`
 and `contents` should be stored as `doubles`.  Because `capacity` and `contents` are distinct
@@ -88,14 +89,14 @@ The `Bucket` class should have four public **instance** methods (not *static* me
     Can you think of a static method that might be useful here?
     Is there a difference between a *class* method and a *static* method?
 
-**Discuss with group:** If you run your code here, what are you expecting the output to be? What is the return type for constructors?
-
 4.   **Create instances of type Bucket**
 
 You should create a main method, and in that method, declare two local variables:
 `big` and `small`, both of type `Bucket`.   Initialize `big` by
 instantiating a new bucket with capacity 10.0.   Initialize `small` by instantiating
 a new bucket with capacity 1.0.
+
+**Discuss with group:** If you run your code here, what are you expecting the output to be? What is the return type for constructors?
 
 5.  **Try out your Bucket methods**
 
