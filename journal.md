@@ -43,7 +43,7 @@ Third, it helps your lecturer understand how the whole class is doing, making hi
 |---|:---:|:---:|---|---|---|
 | 1 |5|-|Just started|Finish lab 1|
 | 2 |5|-|Still learning|Finish lab 2|
-| 3 ||-|||
+| 3 |3|-|having troubles with my project|Finish lab 3|
 | 4 |||||
 | 5 |||||
 | 6 |||||
