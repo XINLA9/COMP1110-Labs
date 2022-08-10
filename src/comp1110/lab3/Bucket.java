@@ -4,11 +4,11 @@ package comp1110.lab3;
  * @author XIN
  * @create 2022-08-10 12:11
  */
-public class bucket {
+public class Bucket {
      private double capacity;
      private double contents;
 //     构造函数
-     bucket(final double capacity){
+     Bucket(final double capacity){
           this.capacity = capacity;
      }
 //获取容量
@@ -19,18 +19,11 @@ public class bucket {
      public double getContents() {
           return contents;
      }
-
-     public void setContents(double contents) {
-          this.contents = contents;
-     }
-
-     public void setCapacity(double capacity) {
-          this.capacity = capacity;
-     }
-
      //清空桶
-     void empty(){
-          this.contents = 0;
+     public double empty(){
+          double flow = contents;
+          contents = 0;
+          return flow;
      }
 //     往桶中加水
      void add(double amount){
@@ -43,14 +36,15 @@ public class bucket {
      }
 
      public static void main(String[] args) {
-          bucket small = new bucket (1.0);
-          bucket big = new bucket(10.0);
+          Bucket small = new Bucket(1.0);
+          Bucket big = new Bucket(10.0);
+
           small.add(20.0);
           big.add(20.0);
           big.empty();
           System.out.println(big.getContents());
-          big.add(small.getContents());
-          big.empty();
+
+          big.add(big.empty());
           System.out.println(small.getContents());
           System.out.println(big.getContents());
      }
