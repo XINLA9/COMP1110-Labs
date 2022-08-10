@@ -4,17 +4,15 @@ package comp1110.lab2;
  * @author XIN
  * @create 2022-08-03 13:15
  */
-public class Task2_1_Countries {
+public class Countries {
     public static void main(String[] args) {
-        String[] array= {"Germany", "Argentina", "Netherlands", "Brazil"};
+        String[] array= {"Germany", "Netherlands", "Argentina", "Brazil"};
         for(int count = 0; count < 4; count++)
         {
-            if (count == 1)
+            if (array[count] != "Argentina")
             {
-                continue;
+                System.out.println(array[count]);
             }
-            System.out.print(array[count]+" ");
         }
-
     }
 }
