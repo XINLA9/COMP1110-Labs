@@ -111,7 +111,7 @@ a new bucket with capacity 1.0.
 
 Test your work using the provided `L3 BucketTest` class.
 
-Commit all of your work to git, push, close the associated issue (#12), and show your tutor.
+Commit all of your work to git, push, and show your tutor.
 
 
 ### 2. Prepare for the lab test
