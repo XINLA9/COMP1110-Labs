@@ -46,7 +46,7 @@ Third, it helps your lecturer understand how the whole class is doing, making hi
 | 3 |3|-|having troubles with my project|Finish lab 3|
 | 4 |4|4|Finish assignment1|Finish The Lab Test|
 | 5 |4|4|learning debug|Working on the groupwork|
-| 6 |||||
+| 6 |4|4|learning using javafx|Finish lab 6|
 | 7 |||||
 | 8 |||||
 | 9 |||||
