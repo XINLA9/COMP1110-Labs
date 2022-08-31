@@ -43,7 +43,7 @@ When you're not checking in with your tutor, watch the [lab demo video](https://
 
     ![alt triangle](assets/lab5a.png)
 
-    *Hint: Relative to the origin, the apex of the triangle should be at (0.0, -86.6), and the right and left corners of the base should be (100.0, 86.6) and (-100.0, 86.6), where 100 = 200/2 and 86.6 = sqrt((200*200)-(100*100))/2;*
+    *Hint: Relative to the origin, the apex of the triangle should be at (0.0, -86.6), and the right and left corners of the base should be (100.0, 86.6) and (-100.0, 86.6), where 100 = 200/2 and 86.6 = sqrt((200 \* 200) - (100 \* 100)) / 2;*
 
 3.  **Create an inner class**
 
@@ -65,8 +65,7 @@ When you're not checking in with your tutor, watch the [lab demo video](https://
 
 6. **Finish up**
 
-   Commit your code, push it, close the relevant issue (#18), and show your work
-   to your tutor.
+   Commit your code, push it, and show your work to your tutor.
 
 ## Part III: Additional Exercises
 
