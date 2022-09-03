@@ -332,7 +332,7 @@ design.
   final, will calling `rollDice()` on `coin` still be random?
 
 Once you have completed the `HeadsOrTails` class, test your code using
-the provided test class `L4 HeadsOrTailsTest`. Commit, push to git,
+the provided test class `L5 HeadsOrTailsTest`. Commit, push to git,
 and show your tutor.
 
 ### 2. 'Random' Number Generation
