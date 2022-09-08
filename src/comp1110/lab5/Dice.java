@@ -21,9 +21,15 @@ public class Dice {
         // Roll 10 times
         for (int i = 0; i < 10; i++){
             System.out.println("(1-6): " + six_sided_dice.rollDice());
+
+        // Check if the Dice give the right number in the scope
             assert (six_sided_dice.rollDice() >= six_sided_dice.lowerBound);
             assert (six_sided_dice.rollDice() <= six_sided_dice.upperBound);
+
             System.out.println("(2-5): " + unusual_dice.rollDice());
+
+            assert (unusual_dice.rollDice() >= unusual_dice.lowerBound);
+            assert (unusual_dice.rollDice() <= unusual_dice.upperBound);
         }
 
         // Update bounds (5-8)
@@ -59,7 +65,7 @@ public class Dice {
 
     // Find the range of the dice roll
     public int diceRange() {
-        return upperBound - lowerBound;
+        return upperBound - lowerBound+1;
     }
 
     // Roll the dice, resulting in random int between lower and upper bound (inclusive)
