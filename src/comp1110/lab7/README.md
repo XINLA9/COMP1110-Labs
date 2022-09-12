@@ -7,7 +7,7 @@ This lab contains material from module [**O5**](https://cs.anu.edu.au/courses/co
 **Tasks**
 1. [Rabbits and Foxes](#1-rabbits-and-foxes)
 
-**Additional Exercises** 
+**Additional Exercises**
 1. [Cellular Automata](#1-cellular-automata)
 2. [Ecosystem Modelling](#2-further-reading-ecosystem-modelling)
 3. [Group Assignment](#3-work-on-your-group-assignment)
@@ -45,11 +45,12 @@ Animals (both rabbits and foxes) reproduce whenever they are not hungry.
 The locations in the world are laid out on a Cartesian grid.
 Each location has an x and a y coordinate, and eight neighbouring locations, which are those locations with x and y coordinates that differ by no more than 1.
 The world has [periodic boundary conditions](https://en.wikipedia.org/wiki/Periodic_boundary_conditions), which means that if an animal moves off the right-hand edge of the grid (`x == world.sizeX`), it reappears on the left-hand edge (`x == 0`) and vice-versa, and if an animal moves off the bottom edge of the grid (`y == world.sizeY`), it reappears on the top edge (`y == 0`) and vice-versa.
-The boundary conditions are shown for an example 5x4 grid in the diagram below; for example, location 15 has neighbouring locations {14,10,11,19,16,4,0,1}.
+The boundary conditions are shown for an example 5x4 grid in the diagram below; for example, location 15 has neighbouring locations {10, 14, 18, 11, 19, 8, 12, 16}.
+
 ![diagram of periodic boundary conditions](../../../assets/periodic_boundary.png)
 
-The class [World.java](World.java) contains an incomplete implementation of the simulation; Javadoc in this class defines the rules for each type of organism.
-You should complete the methods marked "FIXME" after you have finished reading the rest of the explanation below. You should first complete the `getCurrentState` method, which will allow the GUI to interact with your World. After completing this method you should be able to launch the GUI, but you will need to complete the other FIXME methods before the rabbits and foxes will move around the world. 
+The class [World.java](World.java) contains an incomplete implementation of the simulation; the Javadocs in this class define the rules for each type of organism.
+You should complete the methods marked "FIXME" after you have finished reading the rest of the explanation below. You should first complete the `getCurrentState()` method, which will allow the GUI to interact with your World. After completing this method you should be able to launch the GUI, but you will need to complete the other FIXME methods before the rabbits and foxes will move around the world.
 
 Note: you should read all the provided code before making changes.
 Many of the rules are already implemented, including the rules for reproduction and starvation (in the methods `Animal.reproduce()` and `World.update()` respectively).
@@ -59,7 +60,7 @@ Unfortunately, this GUI requires the world to be represented via a simple String
 You must complete the `World.getCurrentState()` method to convert from the internal (object-oriented) structure into the String representation that the GUI requires; the Javadoc for this method contains a full description of the String interface.
 We have also provided a set of unit tests for each of the methods you need to complete, which you can run by selecting  the `L7 WorldTest` configuration from the **Run Configuration** menu and clicking ![run button - green triangle](../../../assets/intellij-icon-run.png) **Run**.
 
-## Part III: Additional Exercises 
+## Part III: Additional Exercises
 
 Remember that these are additional exercises for your own practice. They are not compulsory, but your tutor will be happy to provide assistance and feedback during the lab.
 
