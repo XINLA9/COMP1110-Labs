@@ -124,7 +124,6 @@ public class Board extends Application
                 setLayoutY(nearestTriangle.getLayoutY());
             });
         }
-
     }
 
     @Override
