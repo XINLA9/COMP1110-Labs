@@ -39,15 +39,15 @@ Third, it helps your lecturer understand how the whole class is doing, making hi
 
 *Thoughtful* and *concise* entries are best.
 
-| Week | Going Well? (1-5) | Group OK? (1-5) | What I have done | What I will do | What impedes me |
-|---|:---:|:---:|---|---|---|
-| 1 |5|-|Just started|Finish lab 1|
-| 2 |5|-|Still learning|Finish lab 2|
-| 3 |3|-|having troubles with my project|Finish lab 3|
-| 4 |4|4|Finish assignment1|Finish The Lab Test|
-| 5 |4|4|learning debug|Working on the groupwork|
-| 6 |4|4|learning using javafx|Finish lab 6|
-| 7 |||||
+| Week | Going Well? (1-5) | Group OK? (1-5) | What I have done                | What I will do           | What impedes me |
+|---|:-----------------:|:---------------:|---------------------------------|--------------------------|---|
+| 1 |         5         |        -        | Just started                    | Finish lab 1             |
+| 2 |         5         |        -        | Still learning                  | Finish lab 2             |
+| 3 |         3         |        -        | having troubles with my project | Finish lab 3             |
+| 4 |         4         |        4        | Finish assignment1              | Finish The Lab Test      |
+| 5 |         4         |        4        | learning debug                  | Working on the groupwork |
+| 6 |         4         |        4        | learning using javafx           | Finish lab 6             |
+| 7 |         5         |        5        | learning writing AI             | finish lab 7             |
 | 8 |||||
 | 9 |||||
 | 10 |||||
