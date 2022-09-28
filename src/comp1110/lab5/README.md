@@ -167,7 +167,7 @@ If there are only two people in the group, you can adapt the exercise by delegat
 
 12. **Everyone** pulls and updates and should see the `Main` file with all three contributions.
 
-That completes the group exercise.  Close the associated issue (#15).  The next exercise is an individual exercise.
+That completes the group exercise. The next exercise is an individual exercise.
 
 
 ### 3. The Stack Trace and a Debugging Exercise
@@ -332,8 +332,8 @@ design.
   final, will calling `rollDice()` on `coin` still be random?
 
 Once you have completed the `HeadsOrTails` class, test your code using
-the provided test class `L4 HeadsOrTailsTest`. Commit, push to git,
-close the issue (#16) and show your tutor.
+the provided test class `L5 HeadsOrTailsTest`. Commit, push to git,
+and show your tutor.
 
 ### 2. 'Random' Number Generation
 

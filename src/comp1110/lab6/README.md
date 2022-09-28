@@ -65,8 +65,7 @@ When you're not checking in with your tutor, watch the [lab demo video](https://
 
 6. **Finish up**
 
-   Commit your code, push it, close the relevant issue (#18), and show your work
-   to your tutor.
+   Commit your code, push it, and show your work to your tutor.
 
 ## Part III: Additional Exercises
 
