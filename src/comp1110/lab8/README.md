@@ -28,18 +28,22 @@ Check in with **your tutor** together with the other members of your group.    B
 ## Part II:  Your Lab Tasks
 
 ### 1. Recursion, Sets, and Lists: Crop Rotation
+递归、集合和列表:作物轮作
 
 Complete the missing methods (marked `FIXME`) in the `CropRotation` class.   This question is based on a question from the 2020 S1 final exam.   
 
-To solve it, you need to use sets and lists, and you need to solve a search problem, like the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp-1110-lectures-s-2-2022/-/blob/master/src/comp1110/lectures/J14/Boggle.java) we solved in lectures in unit J14. 
+To solve it, you need to use sets and lists, and you need to solve a search problem, like the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp-1110-lectures-s-2-2022/-/blob/master/src/comp1110/lectures/J14/Boggle.java) we solved in lectures in unit J14.  
+完成CropRotation类中缺少的方法(标记为FIXME)。这个问题是基于2020年S1期末考试的一个问题。
 
 1. **Handle Simple Cases**
 
     It is a good strategy to identify and deal with simple cases first.   In
      this problem, notice that there are a number of circumstances where you
-     should return an empty list.  You should address this simple case first.
-    
-    Add an `if` statement to `getAllRotations()` that checks for the cases where an empty list must be returned, and return the empty `rotations` list.
+     should return an empty list.  You should address this simple case first.   
+    Add an `if` statement to `getAllRotations()` that checks for the cases where an empty list must be returned, and return the empty `rotations` list.    
+    首先识别和处理简单的情况是一个很好的策略。在这个问题中，请注意，在许多情况下都应该返回空列表。您应该首先解决这个简单的情况。  
+   向`getalltices()`中添加`if`语句，用于检查必须返回空列表的情况，并返回空的'rotations'列表。  
+
 
 2. **Implement Switch**
 
@@ -64,8 +68,16 @@ To solve it, you need to use sets and lists, and you need to solve a search prob
     you need to implement `canFollow()`, which will allow your code to determine
     whether a particular crop is a legal follower of the current crop.
     
-    Use a switch statement to complete the `canFollow()` method, returning the correct value according the the vegetable groups of the `first` and `next` vegetables.
-    
+    Use a switch statement to complete the `canFollow()` method, returning the correct value according the the vegetable groups of the `first` and `next` vegetables.  
+   搜索通常涉及从一种可能性转移到另一种可能性(例如，从Boggle游戏中的一个骰子转移到另一个)。这样做至少涉及到两个方面的考虑:  
+   1. 确保你正在考虑的可能性不是你已经考虑过的(如果你不这样做，你的搜索将永远不会完成，因为你将不断地重温你已经遇到的案例)，以及  
+   2. 确保你只考虑法律案件。  
+   在[Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp-1110-lectures-s-2-2022/-/blob/master/src/comp1110/lectures/J14/Boggle.java)中，通过使用名为used[]的布尔数组来确保您不会两次考虑相同的情况，并且代码仔细地跟踪当前搜索中已经考虑了哪些骰子
+   (您可能想要检查[Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp-1110-lectures-s-2-2022/-/blob/master/src/comp1110/lectures/J14/Boggle.java)中的`findlords()`方法，以查看这是如何完成的)。
+   在这个问题中，你会得到一个名为used的蔬菜列表，你应该以类似的方式使用它，在考虑蔬菜时将其添加到列表中，并在尝试使用它们之前检查它们是否已经在集合中。
+   在[Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp-1110-lectures-s-2-2022/-/blob/master/src/comp1110/lectures/J14/Boggle.java)中，检查法律案例是通过使用一组邻居来完成的，这样我们就知道每个骰子的合法邻居是什么。在这种情况下，您需要实现`canFollow()`，它将允许您的代码确定特定的作物是否是当前作物的合法追随者。  
+   使用switch语句完成`canFollow()`方法，根据`first`和`next`的蔬菜组返回正确的值。
+
 3. **Complete the Search**
 
     You should notice that the `findWords()` method in the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp-1110-lectures-s-2-2022/-/blob/master/src/comp1110/lectures/J14/Boggle.java)
@@ -74,6 +86,10 @@ To solve it, you need to use sets and lists, and you need to solve a search prob
     filling a similar role to `findWords()` method in the [Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp-1110-lectures-s-2-2022/-/blob/master/src/comp1110/lectures/J14/Boggle.java).
 
     Write the search by completing `getFixedRotation()`, and adding a `for` loop to `getAllRotations()` that calls `getFixedRotation()` for each of the vegetables in `crops`, adding the vegetable to `used` before calling, and removing it from `used` afterwards. 
+  
+    您应该注意到，一旦其他部分就绪，[Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp-1110-lectures-s-2-2022/-/blob/master/src/comp1110/lectures/J14/Boggle.java)中的findWords()方法就不是非常复杂了。
+    现在需要编写getFixedRotation()的主体，它将是递归的，填充与[Boggle game](https://gitlab.cecs.anu.edu.au/comp1110/comp-1110-lectures-s-2-2022/-/blob/master/src/comp1110/lectures/J14/Boggle.java)中的findWords()方法类似的角色。
+    通过完成getFixedRotation()来编写搜索，并向getallrotation()添加一个for循环，该循环为作物中的每一种蔬菜调用getFixedRotation()，在调用之前将蔬菜添加到`used`中，然后从`used`中删除它。  
 
 ## Part III: Additional Exercises 
 

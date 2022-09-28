@@ -21,18 +21,22 @@ public class World {
 
     /**
      * The size of this world in the x dimension
+     * 世界的宽度
      */
     final int sizeX;
     /**
      * The size of this world in the y dimension
+     * 世界的长度
      */
     final int sizeY;
     /**
      * The amount of grass at each location (x,y)
+     * 在每个位置（x，y）处草的数量
      */
     private int[][] grass;
     /**
      * The animal at each location (x,y) (animals[x][y] == null if no animal at (x,y))
+     * 每个位置处的动物数量
      */
     private Animal[][] animals;
     /**
@@ -44,16 +48,20 @@ public class World {
      * An animal is an organism that can move around the world, consume other
      * organisms, and reproduce (creating a clone of itself).
      * Animals are born with a hunger level of MAX_HUNGER / 2.
+     * 动物是可以在世界中移动，捕食其他生物，并且繁殖（创造一个自己的克隆体）。
+     * 动物出身就带有 MAX_HUNGER / 2 的饥饿值。
      */
     abstract class Animal implements Cloneable {
         static final int MAX_HUNGER = 10;
         /**
          * This animal's x and y coordinates in the world
+         * 动物在世界上的笛卡尔坐标位置
          */
         protected int x, y;
         /**
          * This animal's hunger level, [0..MAX_HUNGER]. A hunger level of
          * MAX_HUNGER will cause this animal to die of starvation.
+         * 这是动物的饥饿值，从0到MAX_HUNGER， 如果饥饿值到达MAX_HUNGER， 动物就会因为饥饿而死亡。
          */
         protected int hunger;
 
@@ -110,6 +118,8 @@ public class World {
          * of this animal and moving it to a random neighbouring empty location.
          * If there are no neighbouring empty locations, the child dies (i.e.
          * reproduction is unsuccessful).
+         * 如果动物饥饿值为0， 将其饥饿值设置为最大值的一半然后繁殖出一个克隆体，
+         * 并将克隆体随机移动到四周的空格。如果附近没有空格，后代死亡（也就是说繁殖不成功）
          *
          * @return the child that was reproduced, if any
          */
@@ -144,12 +154,23 @@ public class World {
          * If the amount of grass in this rabbit's location is 1 or more,
          * reduce the amount of grass by one, and reduce this rabbit's hunger
          * level by 1 (to a minimum hunger level of 0).
+         * 如果兔子所在位置草的数量大于等于1，草数量减一，兔子的饥饿值减一
          * Otherwise, move to a random neighbouring empty location (or stay
          * in the current location if there are no empty neighbouring
          * locations), and increase this rabbit's hunger level by 1 (to a
          * maximum hunger level of MAX_HUNGER).
          */
         void moveAndEat() {
+            if (grass[x][y]>=1)
+            {
+                grass[x][y] = grass[x][y] - 1;
+                hunger = hunger - 1;
+            }
+            else
+            {
+                randomMove();
+                hunger = hunger + 1;
+            }
             // FIXME complete this method
         }
 
@@ -179,6 +200,37 @@ public class World {
          */
         void moveAndEat() {
             // FIXME complete this method
+            boolean existRabbit = false;
+            int rabbitX[] = new int[9];
+            int rabbitY[] = new int[9];
+            int rabbitNumber = 0;
+            for (int dX = -1; dX <= 1; dX++) {
+                for (int dY = -1; dY <= 1; dY++) {
+                    int neighbourX = (x + dX + sizeX) % sizeX;
+                    int neighbourY = (y + dY + sizeY) % sizeY;
+                    if (animals[neighbourX][neighbourY] instanceof Rabbit) {
+                        existRabbit = true;
+                        rabbitX[rabbitNumber] = neighbourX;
+                        rabbitY[rabbitNumber] = neighbourY;
+                        rabbitNumber = rabbitNumber +1;
+                    }
+                }
+            }
+            if (existRabbit)
+            {
+                int random = 0 + (int)(Math.random() * (rabbitNumber-1));
+                int randomX = rabbitX[random];
+                int randomY = rabbitY[random];
+                animals[randomX][randomY] = null;
+                hunger = hunger -1;
+                x = randomX;
+                y = randomY;
+            }
+            else
+            {
+                randomMove();
+                hunger = hunger + 1;
+            }
         }
 
         @Override
@@ -236,6 +288,9 @@ public class World {
      * The string is composed of (sizeX*sizeY) groups of three characters,
      * ordered first by column and then by row. For example, in a 3x3 world
      * the locations are ordered as follows:
+     * 返回一个表示当前世界状态的字符串。
+     * 字符串由三个字符组成(sizeX*sizeY)组，先按列排序，然后按行排序。
+     * 例如，在3x3世界中，位置顺序如下:
      * <p>
      * 0 3 6
      * 1 4 7
@@ -259,8 +314,33 @@ public class World {
      * @return the string representation of the current state of the world
      */
     public String getCurrentState() {
+        String state = new String("");
+        for(int i = 0; i < sizeX; i++)
+        {
+            for(int k = 0; k < sizeY; k++)
+            {
+                String glass = String.valueOf(grass[i][k]);
+
+                String animalType = new String();
+                String animalHungry = new String();
+                if(animals[i][k] == null)
+                {
+                    animalType = " ";
+                    animalHungry = " ";
+                }
+                else if (animals[i][k] instanceof Rabbit ) {
+                    animalType = "r";
+                    animalHungry = String.valueOf(animals[i][k].hunger);
+                }
+                else if (animals[i][k] instanceof Fox ) {
+                    animalType = "f";
+                    animalHungry = String.valueOf(animals[i][k].hunger);
+                }
+                state = state + glass +animalType + animalHungry;
+            }
+        }
+        return state;
         // FIXME 1: complete this method
-        return null;
     }
 
     /**
